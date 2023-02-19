@@ -1,0 +1,26 @@
+One time in Life Time 
+===================
+
+# git config --global user.name "John Doe"
+# git config --global user.email johndoe@example.com
+
+First Time 
+=====================
+# git init
+# git commit -m "first commit"
+# git branch -M main
+# git remote add origin https://github.com/meher09/test.git
+# git push -u origin main
+
+# #######################################
+
+=> git add .
+=> git commit -m "Text instruction file Added"
+=> git push
+
+
+#################
+.gitignore
+
+# Copy Repository 
+git cline <YOUR REPO URL>
