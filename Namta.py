@@ -1,0 +1,10 @@
+# number = int(input('Enter Your Namta no: '))
+# start = 1
+# while start <=10:
+#     print(number, 'x', start, '=', number * start)
+#     start = start + 1
+number = int(input('Enter your namta no: '))
+any = 1
+while any <=20:
+    print(number,'x',any, '=', number * any)
+    any = any + 1

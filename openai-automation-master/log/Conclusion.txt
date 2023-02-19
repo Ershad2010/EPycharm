@@ -1,0 +1,9 @@
+conclusion_title = 
+<!-- wp:heading --><h2>' + choice(['Conclusion', 'Bottom Line', 'Final Touch']) + '</h2><!-- /wp:heading -->
+
+conclusion_para =
+
+"""
+Keyword: {keyword}
+"""
+Write an web article bottom Conclusion:

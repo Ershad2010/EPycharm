@@ -1,0 +1,10 @@
+fruites = ['Apple', 'cherry', 'watermelon', 'jackfruites', 'banana', 'mangoo']
+# print(1, fruites[0])
+# print(2, fruites[1])
+# print(3, fruites[2])
+# print(4, fruites[3])
+# print(5, fruites[4])
+# print(6, fruites[5])
+# print(fruites[0:])
+# print(fruites[-5:-1])
+print(len(fruites))
