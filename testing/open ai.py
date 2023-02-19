@@ -1,13 +1,13 @@
 import openai
-import requests
-import base64
+# import requests
+# import base64
 
-user = 'Ahmad'
-website_url = 'https://bestjobinuae.com'
-pythonapp = 'yMLD 7lul JTE3 R3Dh TYbK 3c1o'
-token = base64.standard_b64encode((user +':'+ pythonapp).encode('utf-8'))
-headers = {'Authorization':'Basic' + token.decode('utf-8')}
-url = website_url+'/wp-json/wp/v2'
+# user = 'Ahmad'
+# website_url = 'https://bestjobinuae.com'
+# pythonapp = 'yMLD 7lul JTE3 R3Dh TYbK 3c1o'
+# token = base64.standard_b64encode((user +':'+ pythonapp).encode('utf-8'))
+# headers = {'Authorization':'Basic' + token.decode('utf-8')}
+# url = website_url+'/wp-json/wp/v2'
 def text_formating(text):
     text = text.replace('.', '.---').split('---')
     retun_text1 = '<!-- wp:paragraph --><p>' + ''.join(text[0:2]) + '</p><!-- /wp:paragraph -->'
@@ -42,22 +42,22 @@ with open('kw.txt', 'r+') as file:
           heading = f'<!-- wp:heading --><h2>{x}</h2><!-- /wp:heading -->' + text_formating(text_render(f'"""\nBlog Section Title: {x}, Main Keyword: {keyword}\n"""\nWrite this blog section into a details professional para, witty and clever explanation:'))
           body += heading
 
-      wp_title = keyword
-      content = body
-      slug = keyword.replace(' ', '-')
-
-      post = {'title': wp_title,
-              'slug': slug,
-              'status': 'draft',
-              'content': content,
-              'categories': '172',
-              'format': 'standard',
-              }
-      r = requests.post(url+'/posts', headers=headers, json=post)
-      if r.status_code == 201:
-          print(website_url+'/'+slug+' Has Been Posted')
-      else:
-          print('An error has happened here')
-      # print(body)
+      # wp_title = keyword
+      # content = body
+      # slug = keyword.replace(' ', '-')
+      #
+      # post = {'title': wp_title,
+      #         'slug': slug,
+      #         'status': 'draft',
+      #         'content': content,
+      #         'categories': '172',
+      #         'format': 'standard',
+      #         }
+      # r = requests.post(url+'/posts', headers=headers, json=post)
+      # if r.status_code == 201:
+      #     print(website_url+'/'+slug+' Has Been Posted')
+      # else:
+      #     print('An error has happened here')
+      print(body)
 
 # print(text_render('how to write a unique paragraph about book fair'))
